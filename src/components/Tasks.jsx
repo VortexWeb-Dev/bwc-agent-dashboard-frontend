@@ -3,7 +3,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Pagination from './Pagination';
 import { mockTasks } from '../mockData/data';
 const TableComponent = () => {
-  const [currentTab, setCurrentTab] = useState('today');
+  // const [currentTab, setCurrentTab] = useState('today');
   const [itemsPerPage, setItemsPerPage] = useState(10);
 
   const [currentPage, setCurrentPage] = useState(1);
@@ -11,21 +11,23 @@ const TableComponent = () => {
 
   const totalItems = mockTasks.length;
 
-  const renderAgentReport = () => {
-    switch(currentTab) {
-      case 'today':
-        return <div className="p-4">Today's Tasks Report</div>;
-      case 'completed':
-        return <div className="p-4">Completed Tasks Report</div>;
-      default:
-        return <div className="p-4">Select a tab to view report</div>;
-    }
-  };
+  // const renderAgentReport = () => {
+  //   switch(currentTab) {
+  //     case 'today':
+  //       return <div className="p-4">Today's Tasks Report</div>;
+  //     case 'completed':
+  //       return <div className="p-4">Completed Tasks Report</div>;
+  //     default:
+  //       return <div className="p-4">Select a tab to view report</div>;
+  //   }
+  // };
 
   return (
     <div className="p-4 space-y-4">
+      <h1 className='text-3xl '>Today's Tasks</h1>
       {/* Tabs */}
-      <div className="flex gap-4 border-b">
+
+      {/* <div className="flex gap-4 border-b">
         <button 
           onClick={() => setCurrentTab('today')}
           className={`px-4 py-2 ${currentTab === 'today' ? 'border-b-2 border-blue-500' : ''}`}
@@ -38,7 +40,7 @@ const TableComponent = () => {
         >
           Completed Tasks
         </button>
-      </div>
+      </div> */}
 
       {/* Table */}
       <div className="overflow-x-auto">
@@ -64,7 +66,7 @@ const TableComponent = () => {
                 <td className="px-4 py-2">{row.campaign}</td>
                 <td className="px-4 py-2">{row.followupDate}</td>
                 <td className="px-4 py-2">
-                <img src="whatsapp.png" alt="" className='h-6 w-6' />
+                <img src="whatsapp.png" alt="" className='h-6 w-6 cursor-pointer' />
                 </td>
               </tr>
             ))}
@@ -78,7 +80,6 @@ const TableComponent = () => {
       {/* Agents Report Section */}
       <div className="mt-8 h-80">
         <h2 className="text-xl font-semibold mb-4">Agents Report</h2>
-        {renderAgentReport()}
       </div>
     </div>
   );

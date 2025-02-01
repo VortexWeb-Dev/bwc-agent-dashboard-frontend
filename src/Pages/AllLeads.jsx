@@ -69,6 +69,7 @@ const TabbedReport = ({tabName}) => {
 
   return (
     <div className="p-6 space-y-6 bg-white rounded-lg shadow">
+        <h1 className='text-3xl'>{tabName.replace(/_/g, ' ').replace(/\b\w/g, char => char.toUpperCase())}</h1>
       {/* Tabs */}
       <div className="flex flex-wrap gap-2 border-b">
         {tabs.map((tab) => (
