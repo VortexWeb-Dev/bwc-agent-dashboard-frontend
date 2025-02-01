@@ -85,3 +85,28 @@ export const mockData = [
     }
   ];
   
+  export const mockTasks = [
+    { code: 'ABC123', date: '2024-01-30', name: 'John Doe', mobile: '1234567890', campaign: 'Summer Sale', followupDate: '2024-02-01' },
+    { code: 'ABC123', date: '2024-01-30', name: 'John Doe', mobile: '1234567890', campaign: 'Summer Sale', followupDate: '2024-02-01' },
+    { code: 'ABC123', date: '2024-01-30', name: 'John Doe', mobile: '1234567890', campaign: 'Summer Sale', followupDate: '2024-02-01' },
+    { code: 'ABC123', date: '2024-01-30', name: 'John Doe', mobile: '1234567890', campaign: 'Summer Sale', followupDate: '2024-02-01' },
+    { code: 'ABC123', date: '2024-01-30', name: 'John Doe', mobile: '1234567890', campaign: 'Summer Sale', followupDate: '2024-02-01' },
+    { code: 'ABC123', date: '2024-01-30', name: 'John Doe', mobile: '1234567890', campaign: 'Summer Sale', followupDate: '2024-02-01' },
+    { code: 'ABC123', date: '2024-01-30', name: 'John Doe', mobile: '1234567890', campaign: 'Summer Sale', followupDate: '2024-02-01' },
+    { code: 'ABC123', date: '2024-01-30', name: 'John Doe', mobile: '1234567890', campaign: 'Summer Sale', followupDate: '2024-02-01' },
+    { code: 'ABC123', date: '2024-01-30', name: 'John Doe', mobile: '1234567890', campaign: 'Summer Sale', followupDate: '2024-02-01' },
+    { code: 'ABC123', date: '2024-01-30', name: 'John Doe', mobile: '1234567890', campaign: 'Summer Sale', followupDate: '2024-02-01' },
+    { code: 'ABC123', date: '2024-01-30', name: 'John Doe', mobile: '1234567890', campaign: 'Summer Sale', followupDate: '2024-02-01' },
+    { code: 'ABC123', date: '2024-01-30', name: 'John Doe', mobile: '1234567890', campaign: 'Summer Sale', followupDate: '2024-02-01' },
+    { code: 'ABC123', date: '2024-01-30', name: 'John Doe', mobile: '1234567890', campaign: 'Summer Sale', followupDate: '2024-02-01' },
+    { code: 'ABC123', date: '2024-01-30', name: 'John Doe', mobile: '1234567890', campaign: 'Summer Sale', followupDate: '2024-02-01' },
+    { code: 'ABC123', date: '2024-01-30', name: 'John Doe', mobile: '1234567890', campaign: 'Summer Sale', followupDate: '2024-02-01' },
+    { code: 'ABC123', date: '2024-01-30', name: 'John Doe', mobile: '1234567890', campaign: 'Summer Sale', followupDate: '2024-02-01' },
+    { code: 'ABC123', date: '2024-01-30', name: 'John Doe', mobile: '1234567890', campaign: 'Summer Sale', followupDate: '2024-02-01' },
+    { code: 'ABC123', date: '2024-01-30', name: 'John Doe', mobile: '1234567890', campaign: 'Summer Sale', followupDate: '2024-02-01' },
+    { code: 'ABC123', date: '2024-01-30', name: 'John Doe', mobile: '1234567890', campaign: 'Summer Sale', followupDate: '2024-02-01' },
+    { code: 'ABC123', date: '2024-01-30', name: 'John Doe', mobile: '1234567890', campaign: 'Summer Sale', followupDate: '2024-02-01' },
+    { code: 'ABC123', date: '2024-01-30', name: 'John Doe', mobile: '1234567890', campaign: 'Summer Sale', followupDate: '2024-02-01' },
+    { code: 'ABC123', date: '2024-01-30', name: 'John Doe', mobile: '1234567890', campaign: 'Summer Sale', followupDate: '2024-02-01' },
+    // Add more mock data as needed
+  ];
