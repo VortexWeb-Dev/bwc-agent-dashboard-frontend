@@ -24,6 +24,8 @@ const Dashboard = () => {
 
   const apiUrl = import.meta.env.VITE_COLLECTION_ENDPOINT;
   const [aggregatedData, setAggregatedData] = useState({});
+  const [loading, setLoading] = useState(true);
+
 
   // Comprehensive mapping of all properties for each category
   const categoryMapping = {
@@ -131,6 +133,8 @@ const Dashboard = () => {
         setAggregatedData(sums);
       } catch (error) {
         console.error('Error fetching data:', error);
+      } finally{
+        setLoading(false);
       }
     };
 
@@ -140,7 +144,19 @@ const Dashboard = () => {
   return (
     <div className="p-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-6 gap-4">
-        {Object.entries(categoryMapping).map(([key, category]) => (
+
+        
+        {
+          loading ? (
+            Array.from({ length: 6 }).map((_, index) => (
+              <div
+                key={index}
+                className="h-32 bg-gray-200 animate-pulse rounded-lg"
+              />
+            ))
+          ) :
+        
+        (Object.entries(categoryMapping).map(([key, category]) => (
          
           <ContentCard
             key={key}
@@ -149,7 +165,9 @@ const Dashboard = () => {
             contentName={category.displayName}
             color={category.color}
           />
-        ))}
+        ))
+      )
+        }
       </div>
     </div>
   );
