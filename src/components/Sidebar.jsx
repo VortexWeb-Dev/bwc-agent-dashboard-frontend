@@ -76,7 +76,7 @@ const Sidebar = () => {
       `}>
         <div className="p-6 border-b border-gray-700">
           <div className="text-xl font-bold mb-1 mt-8">BWC CRM</div>
-          <div className="text-sm text-gray-400">Sami Ullah</div>
+          {/* <div className="text-sm text-gray-400">Sami Ullah</div> */}
           <div className="text-xs text-gray-500">AGENT</div>
         </div>
 
