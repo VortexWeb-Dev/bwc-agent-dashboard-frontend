@@ -1,26 +1,18 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Pagination from './Pagination';
-import { mockTasks } from '../mockData/data';
+// import { mockTasks } from '../mockData/data';
+
 const TableComponent = () => {
   // const [currentTab, setCurrentTab] = useState('today');
+
+  const mockTasks = []
   const [itemsPerPage, setItemsPerPage] = useState(10);
 
   const [currentPage, setCurrentPage] = useState(1);
 
 
   const totalItems = mockTasks.length;
-
-  // const renderAgentReport = () => {
-  //   switch(currentTab) {
-  //     case 'today':
-  //       return <div className="p-4">Today's Tasks Report</div>;
-  //     case 'completed':
-  //       return <div className="p-4">Completed Tasks Report</div>;
-  //     default:
-  //       return <div className="p-4">Select a tab to view report</div>;
-  //   }
-  // };
 
   return (
     <div className="p-4 space-y-4">
@@ -57,7 +49,10 @@ const TableComponent = () => {
             </tr>
           </thead>
           <tbody>
-            {mockTasks.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage).map((row, index) => (
+
+            { 
+            mockTasks.length >0 ?
+            (mockTasks.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage).map((row, index) => (
               <tr key={index} className="border-b hover:bg-gray-50">
                 <td className="px-4 py-2">{row.code}</td>
                 <td className="px-4 py-2">{row.date}</td>
@@ -69,9 +64,15 @@ const TableComponent = () => {
                 <img src="whatsapp.png" alt="" className='h-6 w-6 cursor-pointer' />
                 </td>
               </tr>
-            ))}
+            ))
+            ):
+            <tr>
+              <td colSpan={7} className='text-center mt-4 text-xl text-red-800'>No tasks found</td>
+            </tr>
+            }
           </tbody>
         </table>
+
       </div>
 
       {/* Pagination */}
