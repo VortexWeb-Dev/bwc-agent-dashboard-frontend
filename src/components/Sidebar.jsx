@@ -15,12 +15,7 @@ const Sidebar = () => {
       icon: LayoutDashboard 
     },
     { 
-      id: 'availability', 
-      title: 'My Availability', 
-      icon: Calendar 
-    },
-    { 
-      id: 'leads', 
+      id: 'leads',
       title: 'Agent Leads', 
       icon: Users,
       dropdownItems: [
