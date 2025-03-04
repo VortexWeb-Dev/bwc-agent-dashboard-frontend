@@ -1,9 +1,5 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import Sidebar from "./components/Sidebar";
 import Navbar from "./components/Navbar";
-import Filters from "./components/Filters/FiltersModule";
 import Content from "./components/Content";
 import Tasks from "./components/Tasks";
 import Footer from "./components/Footer";
@@ -54,9 +50,9 @@ function App() {
               path="/home"
               element={
                 <>
-                  <div className="p-4 m-4">
+                  {/* <div className="p-4 m-4">
                     <Filters />
-                  </div>
+                  </div> */}
                   <Content /> <Tasks />
                 </>
               }

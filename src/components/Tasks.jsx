@@ -43,7 +43,7 @@ const TableComponent = () => {
               <th className="px-4 py-2 text-left border-b">Date</th>
               <th className="px-4 py-2 text-left border-b">Name</th>
               <th className="px-4 py-2 text-left border-b">Mobile</th>
-              <th className="px-4 py-2 text-left border-b">Campaign</th>
+              {/* <th className="px-4 py-2 text-left border-b">Campaign</th> */}
               <th className="px-4 py-2 text-left border-b">Followup Date</th>
               <th className="px-4 py-2 text-left border-b">Action</th>
             </tr>
@@ -58,7 +58,7 @@ const TableComponent = () => {
                 <td className="px-4 py-2">{row.date}</td>
                 <td className="px-4 py-2">{row.name}</td>
                 <td className="px-4 py-2">{row.mobile}</td>
-                <td className="px-4 py-2">{row.campaign}</td>
+                {/* <td className="px-4 py-2">{row.campaign}</td> */}
                 <td className="px-4 py-2">{row.followupDate}</td>
                 <td className="px-4 py-2">
                 <img src="whatsapp.png" alt="" className='h-6 w-6 cursor-pointer' />
@@ -79,9 +79,9 @@ const TableComponent = () => {
       <Pagination itemsPerPage={itemsPerPage} setItemsPerPage={setItemsPerPage} currentPage={currentPage} setCurrentPage={setCurrentPage} totalItems={totalItems} />
       
       {/* Agents Report Section */}
-      <div className="mt-8 h-80">
+      {/* <div className="mt-8 h-80">
         <h2 className="text-xl font-semibold mb-4">Agents Report</h2>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -38,7 +38,7 @@ const TabbedReport = ({tabName}) => {
   ];
 
   // Mock data for campaigns
-  const campaigns = ['Campaign 1', 'Campaign 2', 'Campaign 3'];
+  // const campaigns = ['Campaign 1', 'Campaign 2', 'Campaign 3'];
 
   // Handle form input changes
   const handleInputChange = (e) => {
@@ -125,7 +125,7 @@ const TabbedReport = ({tabName}) => {
         </div>
 
         {/* Campaign */}
-        <div className="space-y-1">
+        {/* <div className="space-y-1">
           <label className="text-sm font-medium">Campaign</label>
           <select
             name="campaign"
@@ -138,7 +138,7 @@ const TabbedReport = ({tabName}) => {
               <option key={campaign} value={campaign}>{campaign}</option>
             ))}
           </select>
-        </div>
+        </div> */}
 
         {/* Code */}
         <div className="space-y-1">
@@ -204,7 +204,7 @@ const TabbedReport = ({tabName}) => {
               <th className="p-3 text-left">Date</th>
               <th className="p-3 text-left">Name</th>
               <th className="p-3 text-left">Mobile</th>
-              <th className="p-3 text-left">Campaign</th>
+              {/* <th className="p-3 text-left">Campaign</th> */}
               <th className="p-3 text-left">Last Contact</th>
               <th className="p-3 text-left">Comment</th>
               <th className="p-3 text-left">Status</th>
