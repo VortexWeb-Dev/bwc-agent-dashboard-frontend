@@ -70,14 +70,20 @@ const Dashboard = () => {
   };
 
   const fetchData = async () => {
+    console.log("Fetching data...");
+    
     setLoading(true);
     try {
-      let url = apiUrl;
+      let url = `${apiUrl}/agents`;
       if (filterData.fromDate && filterData.toDate) {
         url += `?datefrom=${filterData.fromDate}&dateto=${filterData.toDate}`;
       }
+      console.log("Fetching data from:", url);
+      
       const response = await fetch(url);
       const data = await response.json();
+      console.log("Data fetched:", data);
+      
 
       const sums = {};
       Object.values(data).forEach((entity) => {
@@ -99,6 +105,10 @@ const Dashboard = () => {
   const handleFilterSubmit = (filterValues) => {
     setFilterData(filterValues);
   };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   useEffect(() => {
     if (filterData.fromDate && filterData.toDate) {
