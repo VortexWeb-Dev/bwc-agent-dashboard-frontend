@@ -53,7 +53,8 @@ function App() {
                   {/* <div className="p-4 m-4">
                     <Filters />
                   </div> */}
-                  <Content /> <Tasks />
+                  <Content /> 
+                  {/* <Tasks /> */}
                 </>
               }
             />

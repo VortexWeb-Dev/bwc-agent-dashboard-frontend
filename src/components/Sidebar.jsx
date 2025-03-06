@@ -20,12 +20,12 @@ const Sidebar = () => {
       icon: Users,
       dropdownItems: [
         { id: 'all_leads', title: 'ALL Leads' },
-        { id: 'interested', title: 'Interested' },
-        { id: 'not_interested', title: 'Not Interested' },
-        { id: 'no_answer', title: 'No Answer' },
-        { id: 'others', title: 'Others' },
-        { id: 'scheduled_leads', title: 'Scheduled Leads' },
-        { id: 'notes', title: 'Notes' }
+        // { id: 'interested', title: 'Interested' },
+        // { id: 'not_interested', title: 'Not Interested' },
+        // { id: 'no_answer', title: 'No Answer' },
+        // { id: 'others', title: 'Others' },
+        // { id: 'scheduled_leads', title: 'Scheduled Leads' },
+        // { id: 'notes', title: 'Notes' }
       ]
     }
   ];
